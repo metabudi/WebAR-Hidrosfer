@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR - Lihat Kerak Bumi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AR: Model 3D Hidrosfer</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="materi.html">Materi</a>
+      <a href="ar.html">AR</a>
+      <a href="kuis.html">Kuis</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lihat Hidrosfer dalam 3D!</h2>
+      <p>Arahkan kamera ke marker untuk melihat model 3D Kerak Bumi. Pastikan kamu izinkan akses kamera ya!</p>
+
+      <a-scene embedded arjs>
+        <a-marker preset="hiro">
+          <!-- Model 3D sederhana (bisa diganti dengan GLTF jika ada file 3D) -->
+          <a-sphere radius="0.5" color="#ffaa00" position="0 0.5 0"></a-sphere>
+          <a-ring color="#555" radius-inner="0.3" radius-outer="0.5" position="0 0.01 0" rotation="-90 0 0"></a-ring>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+    </section>
+  </main>
+</body>
+</html>
