@@ -25,7 +25,7 @@ body {
 
 header {
   background-color: var(--primary-color);
-  color: rgb(14, 131, 226);
+  color: rgb(234, 237, 240);
   text-align: center;
   padding: 1.5rem 1rem;
   border-radius: var(--border-radius);
@@ -44,7 +44,7 @@ nav {
 }
 
 nav a {
-  color: rgb(17, 136, 192);
+  color: rgb(251, 251, 252);
   margin: 0 12px;
   text-decoration: none;
   font-weight: 500;
